@@ -12,36 +12,32 @@ import EstadoModoTracao.EstadoModoTracao;
  * @author Paulo
  */
 public abstract class SequenciaIgnicao {
-    
+
     private EstadoModoTracao selecionaTracao;
-    
-    public void setEstadoModoTracao(EstadoModoTracao tracaoSelecionada){
-        this.selecionaTracao=tracaoSelecionada;
+
+    public void setEstadoModoTracao(EstadoModoTracao tracao) {
+
+        this.selecionaTracao = tracao;
     }
-    
-    public void SequenciaIgnicao(){
-    posicionarNoVeiculo();
-    selecionarTracaoVeiculo();
-    ligarVeiculo();
-    
+
+    public void SequenciaIgnicao() {
+        posicionarNoVeiculo();
+        ligarVeiculo();
+        andar();
     }
 
     private void posicionarNoVeiculo() {
         System.out.println("O motorista entrou no veiculo");
-    
+
     }
-    
-    
 
     private void ligarVeiculo() {
         System.out.println("O motorista ligou o veiculo");
     }
-    
-    
-    
-     private void selecionaTracaoVeiculo() {
-        
-    
+
+    private void andar() {
+        selecionaTracao.forcaTracao();
+        selecionaTracao.velocidadeMax();
     }
-    
+
 }
