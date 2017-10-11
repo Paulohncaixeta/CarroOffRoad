@@ -6,6 +6,7 @@
 package SequenciadeIgnicao;
 
 import EstadoModoTracao.EstadoModoTracao;
+import Veiculo.Veiculo;
 
 /**
  *
@@ -14,8 +15,10 @@ import EstadoModoTracao.EstadoModoTracao;
 public abstract class SequenciaIgnicao {
 
     private EstadoModoTracao selecionaTracao;
+    
+    private Veiculo estadoVeiculo;
 
-    public void setEstadoModoTracao(EstadoModoTracao tracao) {
+    public void setEstadoModoTracaoe(EstadoModoTracao tracao) {
 
         this.selecionaTracao = tracao;
     }
@@ -26,6 +29,7 @@ public abstract class SequenciaIgnicao {
         andar();
     }
 
+    
     private void posicionarNoVeiculo() {
         System.out.println("O motorista entrou no veiculo");
 
@@ -36,6 +40,7 @@ public abstract class SequenciaIgnicao {
     }
 
     private void andar() {
+        
         selecionaTracao.forcaTracao();
         selecionaTracao.velocidadeMax();
     }
