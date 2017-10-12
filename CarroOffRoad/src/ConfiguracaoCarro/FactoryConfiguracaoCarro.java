@@ -15,10 +15,10 @@ public class FactoryConfiguracaoCarro {
         if (tipoCarro.equalsIgnoreCase("CarroTerrenoAlagado"))
             return new CarroTerrenoAlagado();
         
-        if (tipoCarro.equalsIgnoreCase("CarroTerrenoArenoso"))
+       // else (tipoCarro.equalsIgnoreCase("CarroTerrenoArenoso"))
             return new CarroTerrenoArenoso();
                 
-        return new CarroTerrenoArenoso();  
+         
     
     }
     
