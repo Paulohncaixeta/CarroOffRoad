@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package SensorCombustivel;
+
+import java.util.ArrayList;
+import TipodeCombustivel.TipodeCombustivel;
+
+/**
+ *
+ * @author Paulo
+ */
+public class SensorCombustivel {
+    
+    ArrayList<TipodeCombustivel> CombustivelDetectado = new ArrayList();
+    
+    private String Carro = "abastecendo";
+    
+    public void addCarro(TipodeCombustivel foiDetectado){
+        CombustivelDetectado.add(foiDetectado);
+    
+    }
+    
+    public void setCarro(String CarroOffRoad){
+        System.out.println("Antes eu estava abastecido com: " + this.Carro);
+        this.Carro=CarroOffRoad;
+        
+        System.out.println("Agora eu estou abastecido com: " + this.Carro);
+        for (TipodeCombustivel o: CombustivelDetectado){
+        o.notificaTipoCombutivel();
+        
+        }
+    
+    
+    }
+    
+}
