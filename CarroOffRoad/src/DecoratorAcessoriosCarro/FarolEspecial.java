@@ -9,6 +9,6 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class CarroOffRoadEspecial {
+public class FarolEspecial {
     
 }

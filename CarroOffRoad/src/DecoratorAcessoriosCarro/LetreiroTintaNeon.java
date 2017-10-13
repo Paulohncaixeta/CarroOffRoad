@@ -9,18 +9,6 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class CarrroOffRoadBasico extends CarroOffRoadAcessorio{
-    
-    @Override
-    public void parachoque(){
-    
-    
-    }
-    
-    @Override
-    public void painel(){
-    
-    
-    }
+public class LetreiroTintaNeon {
     
 }
