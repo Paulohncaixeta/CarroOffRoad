@@ -9,6 +9,25 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class CarroOffRoadEspecial {
+public abstract class CarroOffRoadEspecial extends CarroOffRoadAcessorio {
+    
+    protected CarroOffRoadAcessorio acessorio;
+    protected String descricao;
+    
+    
+    
+    public CarroOffRoadEspecial(CarroOffRoadAcessorio acessorio, String descricao) {
+        this.acessorio = acessorio;
+        this.descricao = descricao;
+        
+    }
+    
+    @Override
+    public String getDescricao() {
+        return descricao+", "+acessorio.getDescricao();
+    }
+    
+   
+
     
 }

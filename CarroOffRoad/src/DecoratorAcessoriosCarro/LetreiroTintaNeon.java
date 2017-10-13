@@ -9,6 +9,10 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class LetreiroTintaNeon {
+public class LetreiroTintaNeon extends CarroOffRoadEspecial{
+    
+    public LetreiroTintaNeon(CarroOffRoadAcessorio acessorio){
+            super(acessorio,"Letreiro extra que brilha à noite");
+        }
     
 }

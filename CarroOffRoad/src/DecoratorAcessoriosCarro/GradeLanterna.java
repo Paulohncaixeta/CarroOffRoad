@@ -9,6 +9,11 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class GradeLanterna {
+public class GradeLanterna extends CarroOffRoadEspecial {
+    
+    
+    public GradeLanterna(CarroOffRoadAcessorio acessorio){
+            super(acessorio,"Grade protetora para lanterna");
+        }
     
 }

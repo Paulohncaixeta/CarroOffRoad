@@ -9,17 +9,8 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class CarroOffRoadAcessorio {
+public abstract class CarroOffRoadAcessorio {
     
-    
-    public void parachoque(){
-    
-    
-    }
-    
-    public void painel(){
-    
-    
-    }
-    
+    public abstract String getDescricao();
+        
 }

@@ -16,7 +16,7 @@ public class SensorCombustivel {
     
     ArrayList<TipodeCombustivel> CombustivelDetectado = new ArrayList();
     
-    private String Carro = "abastecendo";
+    private String Carro = "Gasolina";
     
     public void addCarro(TipodeCombustivel foiDetectado){
         CombustivelDetectado.add(foiDetectado);

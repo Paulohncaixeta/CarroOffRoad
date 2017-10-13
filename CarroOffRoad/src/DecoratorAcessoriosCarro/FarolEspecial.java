@@ -9,6 +9,11 @@ package DecoratorAcessoriosCarro;
  *
  * @author Paulo
  */
-public class FarolEspecial {
+public class FarolEspecial extends CarroOffRoadEspecial {
+
+    public FarolEspecial(CarroOffRoadAcessorio acessorio){
+                    
+        super(acessorio,"Farol extra especial");
+        }
     
 }

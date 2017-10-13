@@ -9,16 +9,20 @@ package EstadoModoTracao;
  *
  * @author Paulo
  */
-public class Tracao4x2 implements EstadoModoTracao {
+public class Tracao4x2 extends SequenciaIgnicao {
 
-    @Override
+  /**
     public void forcaTracao() {
         System.out.println("Veiculo mais fraco na tracao");
     }
 
-    @Override
+    
     public void velocidadeMax() {
         System.out.println("Veiculo com mais velocidade final");
     }
+*/
+    @Override
+    void andar() {
+        System.out.println("O veiculo saiu com TRACAO 4X2");}
     
 }
