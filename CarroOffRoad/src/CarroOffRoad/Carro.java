@@ -31,20 +31,21 @@ public class Carro {
                 
         CarroOffRoadAcessorio carro = new CarroOffRoad();
         carro = new GradeLanterna(carro);
+        
         carro = new FarolEspecial(carro);
         carro = new LetreiroTintaNeon(carro);
-        System.out.println("O carro foi decorado com:" + carro.getDescricao());
+        System.out.println("O carro foi decorado com:\n" + carro.getDescricao());
         
         SensorCombustivel sensor = new SensorCombustivel();
         sensor.addCarro(new CombustivelAlcool());
         sensor.setCarro("Alcool");
         
         FactoryConfiguracaoCarro factoryCarro = new FactoryConfiguracaoCarro();
-        ConfiguracaoCarro carroConfiguracao = factoryCarro.defineConfiguracao("CarroTerrenoAlagado");    
+        ConfiguracaoCarro carroConfiguracao = factoryCarro.defineConfiguracao("CarroTerrenoArenoso");
         carroConfiguracao.CalibragemPneus();
         carroConfiguracao.PosicaoEscapamento();
         
-        SequenciaIgnicao sair = new Tracao4x2();
+        SequenciaIgnicao sair = new Tracao4x4();
         sair.SequenciaIgnicao();
        
        

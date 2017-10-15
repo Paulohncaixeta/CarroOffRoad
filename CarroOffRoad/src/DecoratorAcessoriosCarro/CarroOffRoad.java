@@ -13,7 +13,7 @@ public class CarroOffRoad extends CarroOffRoadAcessorio{
 
     @Override
     public String getDescricao() {
-        return "CarroOffRoad";
+        return " Esta foi a decoracao escolhida";
     }
 
   

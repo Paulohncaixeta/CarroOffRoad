@@ -24,10 +24,9 @@ public class SensorCombustivel {
     }
     
     public void setCarro(String CarroOffRoad){
-        System.out.println("Antes eu estava abastecido com: " + this.Carro);
+        System.out.println("Antes o carro estava abastecido com: " + this.Carro);
         this.Carro=CarroOffRoad;
-        
-        System.out.println("Agora eu estou abastecido com: " + this.Carro);
+                
         for (TipodeCombustivel o: CombustivelDetectado){
         o.notificaTipoCombutivel();
         

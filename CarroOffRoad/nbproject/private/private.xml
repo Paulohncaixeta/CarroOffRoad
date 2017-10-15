@@ -4,15 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/DecoratorAcessoriosCarro/CarroOffRoadEspecial.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/SensorCombustivel/SensorCombustivel.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/TipodeCombustivel/CombustivelAlcool.java</file>
+            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/EstadoModoTracao/Tracao4x2.java</file>
             <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/DecoratorAcessoriosCarro/CarroOffRoadAcessorio.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/FactoryConfiguracaoCarro/CarroTerrenoArenoso.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/TipodeCombustivel/CombustivelGasolina.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/FactoryConfiguracaoCarro/FactoryConfiguracaoCarro.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/DecoratorAcessoriosCarro/CarrroOffRoadBasico.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/TipodeCombustivel/TipodeCombustivel.java</file>
-            <file>file:/C:/Users/Paulo/Documents/NetBeansProjects/CarroOffRoad/CarroOffRoad/src/FactoryConfiguracaoCarro/CarroTerrenoAlagado.java</file>
         </group>
     </open-files>
 </project-private>

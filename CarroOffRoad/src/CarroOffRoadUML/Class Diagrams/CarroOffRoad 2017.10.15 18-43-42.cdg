@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CarroOffRoad">
+  <ClassDiagramComponents>
+    <Class name="Carro" package="CarroOffRoad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CarroOffRoad" package="DecoratorAcessoriosCarro" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescricao" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CarroOffRoadAcessorio" package="DecoratorAcessoriosCarro" visibility="public" isAbstract="true" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescricao" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="CarroOffRoadEspecial" package="DecoratorAcessoriosCarro" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="acessorio" type="CarroOffRoadAcessorio" visibility="protected"/>
+        <Field name="descricao" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CarroOffRoadAcessorio" name="acessorio"/>
+          <Argument type="String" name="descricao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescricao" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FarolEspecial" package="DecoratorAcessoriosCarro" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CarroOffRoadAcessorio" name="acessorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GradeLanterna" package="DecoratorAcessoriosCarro" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CarroOffRoadAcessorio" name="acessorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="LetreiroTintaNeon" package="DecoratorAcessoriosCarro" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CarroOffRoadAcessorio" name="acessorio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="SequenciaIgnicao" package="EstadoModoTracao" visibility="public" isAbstract="true" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="SequenciaIgnicao" returnType="void" visibility="public"/>
+        <Method name="posicionarNoVeiculo" returnType="void" visibility="private"/>
+        <Method name="ligarVeiculo" returnType="void" visibility="private"/>
+        <Method name="andar" returnType="void" visibility="package" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Tracao4x2" package="EstadoModoTracao" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="andar" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Tracao4x4" package="EstadoModoTracao" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="andar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CarroTerrenoAlagado" package="FactoryConfiguracaoCarro" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="CalibragemPneus" returnType="void" visibility="public"/>
+        <Method name="PosicaoEscapamento" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CarroTerrenoArenoso" package="FactoryConfiguracaoCarro" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="CalibragemPneus" returnType="void" visibility="public"/>
+        <Method name="PosicaoEscapamento" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConfiguracaoCarro" package="FactoryConfiguracaoCarro" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="CalibragemPneus" returnType="void" visibility="public"/>
+        <Method name="PosicaoEscapamento" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FactoryConfiguracaoCarro" package="FactoryConfiguracaoCarro" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="defineConfiguracao" returnType="ConfiguracaoCarro" visibility="public">
+          <Argument type="String" name="tipoCarro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SensorCombustivel" package="SensorCombustivel" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="CombustivelDetectado" type="ArrayList&lt;TipodeCombustivel&gt;" visibility="package"/>
+        <Field name="Carro" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addCarro" returnType="void" visibility="public">
+          <Argument type="TipodeCombustivel" name="foiDetectado"/>
+        </Method>
+        <Method name="setCarro" returnType="void" visibility="public">
+          <Argument type="String" name="CarroOffRoad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CombustivelAlcool" package="TipodeCombustivel" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="notificaTipoCombutivel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CombustivelGasolina" package="TipodeCombustivel" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="notificaTipoCombutivel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="TipodeCombustivel" package="TipodeCombustivel" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Methods>
+        <Method name="notificaTipoCombutivel" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="DecoratorAcessoriosCarro.CarroOffRoadEspecial" target="DecoratorAcessoriosCarro.CarroOffRoadAcessorio"/>
+    <HasRelation name="acessorio" source="DecoratorAcessoriosCarro.CarroOffRoadEspecial" target="DecoratorAcessoriosCarro.CarroOffRoadAcessorio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="FactoryConfiguracaoCarro.CarroTerrenoAlagado" target="FactoryConfiguracaoCarro.ConfiguracaoCarro"/>
+    <UseRelation source="SensorCombustivel.SensorCombustivel" target="TipodeCombustivel.TipodeCombustivel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="DecoratorAcessoriosCarro.LetreiroTintaNeon" target="DecoratorAcessoriosCarro.CarroOffRoadEspecial"/>
+    <IsRelation name="is" source="FactoryConfiguracaoCarro.CarroTerrenoArenoso" target="FactoryConfiguracaoCarro.ConfiguracaoCarro"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TipodeCombustivel.CombustivelAlcool" target="TipodeCombustivel.TipodeCombustivel"/>
+    <IsRelation name="is" source="DecoratorAcessoriosCarro.FarolEspecial" target="DecoratorAcessoriosCarro.CarroOffRoadEspecial"/>
+    <IsRelation name="is" source="EstadoModoTracao.Tracao4x2" target="EstadoModoTracao.SequenciaIgnicao"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TipodeCombustivel.CombustivelGasolina" target="TipodeCombustivel.TipodeCombustivel"/>
+    <IsRelation name="is" source="DecoratorAcessoriosCarro.CarroOffRoad" target="DecoratorAcessoriosCarro.CarroOffRoadAcessorio"/>
+    <HasRelation name="CombustivelDetectado" source="SensorCombustivel.SensorCombustivel" target="TipodeCombustivel.TipodeCombustivel" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;TipodeCombustivel&gt;"/>
+    <IsRelation name="is" source="DecoratorAcessoriosCarro.GradeLanterna" target="DecoratorAcessoriosCarro.CarroOffRoadEspecial"/>
+    <IsRelation name="is" source="EstadoModoTracao.Tracao4x4" target="EstadoModoTracao.SequenciaIgnicao"/>
+    <UseRelation source="FactoryConfiguracaoCarro.FactoryConfiguracaoCarro" target="FactoryConfiguracaoCarro.ConfiguracaoCarro" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
